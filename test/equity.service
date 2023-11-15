@@ -5,8 +5,8 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/sh /usr/local/src/start_equity.sh
-ExecStop=/bin/sh /usr/local/src/stop_equity.sh
+ExecStart=/bin/bash /usr/local/src/start_equity.sh
+ExecStop=/bin/bash /usr/local/src/stop_equity.sh
 User=root
 Group=root
 Restart=always

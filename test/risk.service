@@ -4,8 +4,8 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/sh /usr/local/src/start_risk.sh
-ExecStop=/bin/sh /usr/local/src/stop_risk.sh
+ExecStart=/bin/bash /usr/local/src/start_risk.sh
+ExecStop=/bin/bash /usr/local/src/stop_risk.sh
 User=root
 Group=root
 Restart=always

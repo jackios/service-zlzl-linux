@@ -4,8 +4,8 @@ After=syslog.target network.target
 
 [Service]
 Type=simple
-ExecStart=/bin/sh /usr/local/src/start_safe.sh
-ExecStop=/bin/sh /usr/local/src/stop_safe.sh
+ExecStart=/bin/bash /usr/local/src/start_safe.sh
+ExecStop=/bin/bash /usr/local/src/stop_safe.sh
 User=root
 Group=root
 Restart=always
