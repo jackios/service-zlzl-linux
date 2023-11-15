@@ -1,0 +1,14 @@
+[Unit]
+Description=Your JAR Service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /usr/local/src/start_workflow.sh
+ExecStop=/bin/sh /usr/local/src/stop_workflow.sh
+User=root
+Group=root
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
